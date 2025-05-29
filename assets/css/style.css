@@ -5,7 +5,7 @@
   --red-color: #e76d7a;
   --green-light-color: #95b2af;
   --black-color: #000;
-  --gap: 3rem;
+  --gap: 2rem;
 }
 
 * {
@@ -23,6 +23,7 @@ body {
   font-size: 2rem;
   color: var(--primary-color);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h1,
@@ -80,8 +81,7 @@ a {
   background: var(--white-color);
 }
 
-.yellow-bg {
-  background-image: url("../img/sun-tornado.svg");
+.white-bg {
   background-size: cover;
   background-position: center center;
   color: var(--white-color);
@@ -197,9 +197,9 @@ a {
   justify-content: center;
 }
 
-.home-text-conten h2 {
-  font-size: 8rem;
-  margin-bottom: 6rem;
+.home-text-content h2 {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
 }
 
 .shadow-text-content {
@@ -274,4 +274,5 @@ a {
   font-style: italic;
   top: -4rem;
   left: -2rem;
+  transform: rotate(5deg);
 }
