@@ -193,7 +193,16 @@ a {
 
 .home-text-content h2 {
   padding-top: 3rem;
-  font-size: 4.5rem;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.home-text-content p {
+  text-align: justify;
+}
+.home-text-content h2 {
+  padding-top: 3rem;
+  font-size: 5rem;
   margin-bottom: 2rem;
 }
 
@@ -253,12 +262,14 @@ a {
   text-shadow: 0 0.1rem 0.3rem var(--green-light-color);
 }
 
-.sobre-spacing {
-  height: 1rem;
+.color-text-black span {
+  font-family: "Montserrat", sans-serif;
+  color: var(--black-color);
+  text-shadow: none;
 }
 
-.sobre-spacing2 {
-  height: 2rem;
+.sobre-spacing {
+  height: 1rem;
 }
 
 .topico-item {
@@ -269,9 +280,9 @@ a {
 }
 
 .icone-topico {
-  width: 5rem;
+  width: 4.5rem;
   height: auto;
-  margin-right: 0.1rem;
+  margin-right: 1rem;
   transform: rotate(-12deg);
 }
 
@@ -281,6 +292,11 @@ a {
 
 .conteudo-topico p {
   margin: 0;
+  text-align: justify;
+}
+
+.conteudo-topico p:first-child {
+  margin-bottom: 0.5rem;
 }
 
 .sobre-content {
@@ -288,8 +304,10 @@ a {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
+  padding-top: 12rem;
+  padding-bottom: var(--gap);
 }
 
 .font-grid {
