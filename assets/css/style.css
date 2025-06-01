@@ -81,12 +81,6 @@ a {
   background: var(--white-color);
 }
 
-.white-bg {
-  background-size: cover;
-  background-position: center center;
-  color: var(--white-color);
-}
-
 .main-content {
   max-width: 120rem;
   margin: 0 auto;
@@ -211,11 +205,6 @@ a {
   line-height: 1.2;
 }
 
-.destaque {
-  color: var(--white-color);
-  text-shadow: 0 0.2rem 0.8rem var(--green-light-color);
-}
-
 .home-img img {
   max-width: 100%;
   height: auto;
@@ -225,6 +214,33 @@ a {
 
 .efect {
   text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+.botoes-container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.botao-grande {
+  padding: 20px 40px;
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: var(--yellow-color);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.botao-grande:hover {
+  background-color: var(--red-color);
 }
 
 .color-text-blue {
@@ -237,6 +253,36 @@ a {
   text-shadow: 0 0.1rem 0.3rem var(--green-light-color);
 }
 
+.sobre-spacing {
+  height: 1rem;
+}
+
+.sobre-spacing2 {
+  height: 2rem;
+}
+
+.topico-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.icone-topico {
+  width: 5rem;
+  height: auto;
+  margin-right: 0.1rem;
+  transform: rotate(-12deg);
+}
+
+.conteudo-topico {
+  flex-grow: 0.2;
+}
+
+.conteudo-topico p {
+  margin: 0;
+}
+
 .sobre-content {
   max-width: 64rem;
   display: flex;
@@ -244,6 +290,10 @@ a {
   justify-content: center;
   height: 100vh;
   text-align: center;
+}
+
+.font-grid {
+  font-size: 2.5rem;
 }
 
 .grid-one-content {
@@ -258,14 +308,15 @@ a {
 }
 
 .grid-description {
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 4rem;
   counter-reset: counter-grid;
+  padding-bottom: 10rem;
 }
 
 .grid h3 {
@@ -281,7 +332,7 @@ a {
   position: absolute;
   font-size: 8rem;
   font-style: italic;
-  top: -4rem;
-  left: -2rem;
+  top: -3rem;
+  left: -1.8rem;
   transform: rotate(5deg);
 }
