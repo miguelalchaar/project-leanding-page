@@ -312,6 +312,7 @@ a {
 
 .font-grid {
   font-size: 2.5rem;
+  text-align: justify;
 }
 
 .grid-one-content {
@@ -353,4 +354,8 @@ a {
   top: -3rem;
   left: -1.8rem;
   transform: rotate(5deg);
+}
+
+.grid-main-heading {
+  padding-top: 9rem;
 }
