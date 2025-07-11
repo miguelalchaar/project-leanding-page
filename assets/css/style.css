@@ -6,6 +6,7 @@
   --green-light-color: #95b2af;
   --black-color: #000;
   --gap: 2rem;
+  --color-table: #4a8296;
 }
 
 * {
@@ -68,6 +69,35 @@ h6 {
 
 a {
   text-decoration: none;
+}
+
+.responsive-table {
+  overflow: hidden;
+  overflow: auto;
+}
+
+table {
+  min-width: 360px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  text-wrap: nowrap;
+  padding: 1rem;
+  text-align: left;
+  border: 0.1rem solid var(--white-color);
+}
+
+tfoot td,
+table th {
+  background: var(--color-table);
+}
+
+table caption h6 {
+  font-size: 3rem;
+  text-align: left;
 }
 
 .button-text {
@@ -178,7 +208,7 @@ a {
 }
 
 .menu-spacing {
-  height: 7rem;
+  height: 3rem;
 }
 
 .home-content {
@@ -377,4 +407,14 @@ a {
 }
 .galery-img img:hover {
   transform: translate(-2%, 2%) scale(0.9);
+}
+
+.Profissional {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.Profissional-text {
+  text-align: center;
+  font-size: 1.6rem;
 }
