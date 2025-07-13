@@ -72,6 +72,7 @@ a {
 }
 
 .responsive-table {
+  width: 100%;
   overflow: hidden;
   overflow: auto;
 }
@@ -84,15 +85,14 @@ table {
 
 table td,
 table th {
-  text-wrap: nowrap;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: left;
   border: 0.1rem solid var(--white-color);
 }
 
 tfoot td,
 table th {
-  background: var(--color-table);
+  background: var(--yellow-color);
 }
 
 table caption h6 {
@@ -362,7 +362,7 @@ table caption h6 {
 }
 
 .grid-description {
-  padding-bottom: 7rem;
+  padding-bottom: 5rem;
 }
 
 .grid {
@@ -377,7 +377,7 @@ table caption h6 {
   font-size: 3rem;
   position: relative;
   padding-left: 5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .grid h3::before {
@@ -404,6 +404,7 @@ table caption h6 {
 
 .galery-img img {
   transition: all 300ms ease-in-out;
+  border-radius: 5%;
 }
 .galery-img img:hover {
   transform: translate(-2%, 2%) scale(0.9);
@@ -417,4 +418,20 @@ table caption h6 {
 .Profissional-text {
   text-align: center;
   font-size: 1.6rem;
+}
+
+.Profissional a {
+  color: var(--primary-color);
+}
+
+.Profissional a:hover {
+  color: var(--red-color);
+  transition: all 300ms ease-out;
+}
+
+.title-table {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: var(--white-color);
+  text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
 }
