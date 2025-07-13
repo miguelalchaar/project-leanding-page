@@ -6,12 +6,13 @@
   --green-light-color: #95b2af;
   --black-color: #000;
   --gap: 2rem;
-  --color-table: #4a8296;
+  --color-blue: #4a8296;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -205,10 +206,6 @@ table caption h6 {
   font-size: 1.7rem;
   font-weight: bold;
   text-decoration: none;
-}
-
-.menu-spacing {
-  height: 3rem;
 }
 
 .home-content {
@@ -434,4 +431,111 @@ table caption h6 {
   font-size: 2rem;
   color: var(--white-color);
   text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+.contact-grid {
+  padding-top: 8rem;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: var(--gap);
+  align-items: center;
+}
+
+.contact-img img {
+  max-width: 30rem;
+  width: 100%;
+  height: auto;
+}
+.contact-text-content h2 {
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  grid-column: span 2;
+  margin-top: 2rem;
+}
+
+.contact-form .form-grid {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.form-group {
+  flex: 1 1 320px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 0.2rem solid var(--black-color);
+  background: var(--primary-color);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+.form-group button {
+  border: 0.1rem solid var(--black-color);
+  background: var(--yellow-color);
+  color: var(--black-color);
+  padding: 2rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.form-group button:hover {
+  background: var(--red-color);
+  border-color: var(--red-color);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 6px 1px var(--color-blue);
+  border: none;
+}
+
+.title-form {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.footer a {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+  text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.heart {
+  color: var(--red-color);
 }
