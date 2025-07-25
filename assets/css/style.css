@@ -452,7 +452,6 @@ table caption h6 {
 
 .contact-form {
   grid-column: span 2;
-  margin-top: 2rem;
 }
 
 .contact-form .form-grid {
@@ -474,11 +473,13 @@ table caption h6 {
 
 .form-group input,
 .form-group textarea {
-  border: 0.2rem solid var(--black-color);
+  border: none;
   background: var(--primary-color);
   padding: 1.5rem 2rem;
   width: 100%;
   border-radius: 5px;
+  color: var(--white-color);
+  font-size: 17px;
 }
 
 .full-width {
@@ -487,7 +488,7 @@ table caption h6 {
 }
 
 .form-group button {
-  border: 0.1rem solid var(--black-color);
+  border: none;
   background: var(--yellow-color);
   color: var(--black-color);
   padding: 2rem 2rem;
@@ -503,6 +504,8 @@ table caption h6 {
 .form-group button:hover {
   background: var(--red-color);
   border-color: var(--red-color);
+  box-shadow: 0 0 4px 1px var(--red-color);
+  transform: scale(1.03);
 }
 
 .form-group input:focus,
@@ -521,7 +524,7 @@ table caption h6 {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: var(--white-color);
+  color: #ffffff83;
   font-size: 1.5rem;
 }
 
@@ -538,4 +541,11 @@ table caption h6 {
 
 .heart {
   color: var(--red-color);
+}
+
+.flex {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
