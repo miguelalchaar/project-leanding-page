@@ -549,3 +549,154 @@ table caption h6 {
   align-items: center;
   justify-content: center;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--yellow-color);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--black-color);
+  border: 0.1rem solid var(--primary-color);
+}
+
+.back-to-top:hover {
+  background: var(--red-color);
+  box-shadow: 0 0 2px 1px var(--red-color);
+  transition: ease-in-out 300ms;
+}
+
+.close-menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .home-content,
+  .grid,
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .home-text-content {
+    text-align: center;
+    grid-row: 1;
+  }
+
+  .home-text-content h2 {
+    font-size: 3.8rem;
+    overflow-wrap: break-word;
+    margin-bottom: 4rem;
+  }
+
+  .home-img {
+    grid-row: 2;
+    margin-bottom: 3rem;
+  }
+
+  .botoes-container-flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    gap: 1.5rem;
+  }
+
+  .shadow-text-content {
+    font-size: 3.8rem;
+    overflow-wrap: break-word;
+  }
+
+  .galery-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .galery-img img {
+    width: 100%;
+  }
+
+  .grid-one-content {
+    display: block;
+  }
+
+  .main-bg,
+  .white-bg {
+    overflow-x: auto;
+  }
+
+  .menu {
+    bottom: 0;
+    text-align: center;
+  }
+
+  .menu-content,
+  .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu-content {
+    height: 100vh;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .close-menu {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+
+  .close-menu-label::after {
+    content: "☰";
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 20%;
+  }
+
+  .close-menu:checked ~ .menu {
+    display: block;
+  }
+
+  .close-menu:checked ~ .close-menu-label::after {
+    display: block;
+    content: "X";
+  }
+
+  .logo-area {
+    padding-right: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .especialidades {
+    padding-left: 1rem;
+  }
+
+  .grid-main-heading {
+    font-size: 4rem;
+    overflow-wrap: break-word;
+  }
+
+  .spacing {
+    padding: 2rem;
+  }
+}
