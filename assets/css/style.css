@@ -591,6 +591,11 @@ table caption h6 {
     font-size: 3.8rem;
     overflow-wrap: break-word;
     margin-bottom: 4rem;
+    text-align: left;
+  }
+
+  .home-text-content p {
+    text-align: left;
   }
 
   .home-img {
