@@ -590,7 +590,7 @@ table caption h6 {
   .home-text-content h2 {
     font-size: 3.8rem;
     overflow-wrap: break-word;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: left;
   }
 
@@ -600,7 +600,6 @@ table caption h6 {
 
   .home-img {
     grid-row: 2;
-    margin-bottom: 3rem;
   }
 
   .botoes-container-flex {
@@ -613,6 +612,15 @@ table caption h6 {
   .shadow-text-content {
     font-size: 3.8rem;
     overflow-wrap: break-word;
+  }
+
+  .icone-topico {
+    width: 3.5rem;
+    margin-right: 0.6rem;
+  }
+
+  .conteudo-topico p {
+    text-align: left;
   }
 
   .galery-img {
@@ -696,12 +704,39 @@ table caption h6 {
     padding-left: 1rem;
   }
 
-  .grid-main-heading {
-    font-size: 4rem;
+  .especialidades h2 {
+    font-size: 3.4rem;
     overflow-wrap: break-word;
+  }
+
+  .grid h3::before {
+    font-size: 6rem;
+    top: -1rem;
+    left: -1.4rem;
+    transform: rotate(3deg);
   }
 
   .spacing {
     padding: 2rem;
+  }
+
+  .title-table {
+    font-size: 1.5rem;
+  }
+
+  table td,
+  table th {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-img {
+    width: 100%;
+    max-width: 360px;
   }
 }
